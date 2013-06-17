@@ -1,32 +1,32 @@
-RiverTrail on chromium.
+Parallel JavaScript (a.k.a RiverTrail) on chromium.
 
 ## Code
-1. chromium: https://github.com/01org/chromium-rivertrail
+1. chromium: https://github.com/01org/pa-chromium.git 
 
-  use the “rivertrail” branch.
+  use the “master” branch.
  
-2. RiverTrail:   https://github.com/01org/blink-rivertrail
+2. blink: https://github.com/01org/pa-blink.git 
 
-  use the “rivertrail” branch.
+  use the “master” branch.
 
-3. .gclient file https://github.com/01org/chromium-rivertrail/blob/rivertrail/.gclient
+3. .gclient file https://github.com/01org/pa-chromium/blob/master/.gclient 
 
 ## Build process
 
 - fetch chromium code:
 
-  `git clone git@github.com:01org/chromium-rivertrail.git src`
+  `git clone git@github.com:01org/pa-chromium.git src`
   
-  `git checkout –b rivertrail origin/rivertrail`
+  `git checkout –b master origin/master`
 
 
-- fetch RiverTrail code:
+- fetch blink code:
 
   `cd src/third-party`
   
-  `git clone git@github.com:01org/blink-rivertrail.git WebKit`
+  `git clone git@github.com:01org/pa-blink.git WebKit`
   
-  `git checkout –b rivertrail oirigin/rivertrail`
+  `git checkout –b master oirigin/master`
 
 - gclient sync.
 
